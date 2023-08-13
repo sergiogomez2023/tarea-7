@@ -1,0 +1,59 @@
+
+.cajas {
+     background-color: rgb(202, 163, 116);
+     display: grid;
+    
+     grid-template-rows:repeat(9, 3fr);
+     gap: 5px;
+     width: 800px;
+     height: 1000px;
+     padding: 10px;
+
+
+}
+
+.caja1{
+    background-color: rgb(57, 57, 153);
+    padding: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: auto;
+
+}
+.caja2{
+    background-color: rgb(202, 38, 38);
+}
+.caja3{
+    background-color: rgb(41, 146, 41);
+}
+.caja4{
+    background-color: chocolate;
+}
+.caja5{
+    background-color: rgb(86, 27, 141);
+}
+.caja6{
+    background-color: chartreuse;
+}
+.caja7{
+    background-color: cornflowerblue;
+}
+.caja8{
+    background-color: darkred;
+}
+.caja9{
+    background-color: goldenrod;
+}
+@media (min-width:320px){ 
+    .cajas{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media (min-width:768px){ 
+    .cajas{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
